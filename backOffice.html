@@ -45,7 +45,7 @@
                             placeholder="Please add a description of the product" required></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="category">What is the category of the movie:</label>
+                        <label for="category">Category of the movie:</label>
                         <select name="category" id="category" class="input-forms-1 form-control"
                             style="border-radius: 5px; padding-left: 10px">
                             <option value="Thriller">Thriller</option>
@@ -61,8 +61,8 @@
                     </div>
                     <div class="buttongroup">
                         <div>
-                            <button type="submit" class="btn btn-primary"> Submit </button>
-                            <button type="reset" class="btn btn-secondary">Delete</button>
+                            <button type="submit" class="submitButton btn btn-primary"> Submit </button>
+                            <button type="delete" onclick="deleteEvent()" class="btn btn-secondary">Delete</button>
                         </div>
                     </div>
             </div>
