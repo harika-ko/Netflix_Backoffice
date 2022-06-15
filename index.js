@@ -19,7 +19,7 @@ const showThrillerMovies = async () => {
               <div class="col-6 col-md-4 col-lg-6">
                 <h4>${movie.name}</h4>
                 <h6>${movie.description}</h6>
-                <a href="./backOffice.html?userId=${movie._id}">
+                <a href="./backOffice.html?userId=${movie._id}&${movie.category}">
                 <img class="img-fluid row-images" style="height:200px; width:400px;" src="${movie.imageUrl}">   
         </div>
             `;
@@ -41,7 +41,7 @@ const showFantasyMovies = async () => {
               <div class="col-6 col-md-4 col-lg-6">
       <h4>${movie.name}</h4>
       <h6>${movie.description}</h6>
-      <a href="./backOffice.html?userId=${movie._id}">
+      <a href="./backOffice.html?userId=${movie._id}&${movie.category}">
       <img class="img-fluid row-images" style="height:200px; width:400px;" src="${movie.imageUrl}">   
         </div>
             `;
@@ -63,7 +63,7 @@ const showCrimeMovies = async () => {
               <div class="col-6 col-md-4 col-lg-6">
       <h4>${movie.name}</h4>
       <h6>${movie.description}</h6>
-      <a href="./backOffice.html?userId=${movie._id}">
+      <a href="./backOffice.html?userId=${movie._id}&${movie.category}">
       <img class="img-fluid row-images" style="height:200px; width:400px;" src="${movie.imageUrl}">   
         </div>
             `;
